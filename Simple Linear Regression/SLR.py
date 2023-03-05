@@ -32,6 +32,11 @@ model.fit(X_train, y_train)
 
 print("Intercept for model is:",model.intercept_)
 print("Coefficient of model is:",model.coef_)
+a = model.intercept_
+b = model.coef_
+c = float(input("Enter Hours you studied for predicting what your score can be "))
+Y_pred = b + a*c
+print(Y_pred)
 
 #----------Visualize the regression line----------#
 
