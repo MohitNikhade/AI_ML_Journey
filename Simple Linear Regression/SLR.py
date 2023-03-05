@@ -35,7 +35,7 @@ print("Coefficient of model is:",model.coef_)
 a = model.intercept_
 b = model.coef_
 c = float(input("Enter Hours you studied for predicting what your score can be "))
-Y_pred = b + a*c
+Y_pred = a + b*c
 print(Y_pred)
 
 #----------Visualize the regression line----------#
